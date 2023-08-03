@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" opened mode="side">
+    <div class="top-div">
+      <h2 class="text-center">Hii! Faieem</h2>
+      <hr>
+    </div>
+    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <button class="nav-link active side-nav-btn" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+      <button class="nav-link side-nav-btn" id="v-pills-user-tab" data-bs-toggle="pill" data-bs-target="#v-pills-user" type="button" role="tab" aria-controls="v-pills-user" aria-selected="false">User</button>
+      <button class="nav-link side-nav-btn" id="v-pills-booking-tab" data-bs-toggle="pill" data-bs-target="#v-pills-booking" type="button" role="tab" aria-controls="v-pills-booking" aria-selected="false">Booking</button>
+      <button class="nav-link side-nav-btn" id="v-pills-notifications-tab" data-bs-toggle="pill" data-bs-target="#v-pills-notifications" type="button" role="tab" aria-controls="v-pills-notifications" aria-selected="false">Notifications</button>
+      <button class="nav-link side-nav-btn" id="v-pills-contects-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contects" type="button" role="tab" aria-controls="v-pills-contects" aria-selected="false">Contects</button>
+    </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" class="btn btn-info text-white side-nav-toggle-btn" mat-button (click)="drawer.toggle()">
+      <i class="bi bi-bar-chart-steps"></i>
+    </button>
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+        <!-- app-home  --> Home
+      </div>
+      <div class="tab-pane fade" id="v-pills-user" role="tabpanel" aria-labelledby="v-pills-user-tab" tabindex="0">
+        User
+      </div>
+      <div class="tab-pane fade" id="v-pills-booking" role="tabpanel" aria-labelledby="v-pills-booking-tab" tabindex="0">
+        Booking
+      </div>
+      <div class="tab-pane fade" id="v-pills-notifications" role="tabpanel" aria-labelledby="v-pills-notifications-tab" tabindex="0">
+        Notification
+      </div>
+      <div class="tab-pane fade" id="v-pills-contects" role="tabpanel" aria-labelledby="v-pills-contects-tab" tabindex="0">
+        Contects
+      </div>
+    </div>
+  </div>
+
+</mat-drawer-container>
